@@ -557,4 +557,538 @@
 <body>
 
 
-    
+    <!-- =====================================
+         01 — ABERTURA
+    ====================================== -->
+
+    <section class="inicio">
+
+        <div class="inicio-conteudo">
+
+            <div class="marca">
+                MARATONA TECH • 2026
+            </div>
+
+            <h1>
+                O futuro
+                <span>tem consequências.</span>
+            </h1>
+
+            <p>
+                A tecnologia promete tornar nossas vidas melhores.
+                Mas toda transformação possui um impacto.
+                Descubra quem pode ser afetado pelas escolhas
+                tecnológicas que fazemos hoje.
+            </p>
+
+            <button
+                class="botao"
+                onclick="irPara('cenarios')">
+
+                INICIAR EXPERIÊNCIA →
+
+            </button>
+
+        </div>
+
+        <div class="scroll">
+            ROLE PARA CONTINUAR ↓
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         02 — CENÁRIOS
+    ====================================== -->
+
+    <section class="cenarios" id="cenarios">
+
+        <div class="cabecalho">
+
+            <small>
+                01 / EXPLORE
+            </small>
+
+            <h2>
+                Escolha uma situação.
+            </h2>
+
+            <p>
+                Por trás de cada avanço tecnológico existem
+                pessoas, decisões e consequências.
+                Clique em uma situação para descobrir o que
+                pode estar acontecendo.
+            </p>
+
+        </div>
+
+
+        <div class="cenarios-grid">
+
+
+            <div
+                class="cenario"
+                onclick="abrirPainel(
+                '01',
+                'Desigualdade digital',
+                'Imagine duas pessoas procurando uma oportunidade de emprego. Uma possui computador, internet rápida e cursos online. A outra não possui acesso adequado à internet.',
+                'A tecnologia pode ampliar oportunidades, mas quando o acesso não é igual para todos, ela também pode aumentar desigualdades já existentes.'
+                )">
+
+                <span class="cenario-numero">
+                    SITUAÇÃO 01
+                </span>
+
+                <span class="cenario-icone">
+                    👤
+                </span>
+
+                <h3>
+                    Quem ficou para trás?
+                </h3>
+
+                <p>
+                    Acesso desigual à tecnologia.
+                </p>
+
+            </div>
+
+
+            <div
+                class="cenario"
+                onclick="abrirPainel(
+                '02',
+                'Automação e trabalho',
+                'Uma empresa decide automatizar parte de suas atividades. Algumas tarefas deixam de ser realizadas por pessoas e passam a ser feitas por sistemas.',
+                'A automação pode aumentar a produtividade e criar novas profissões, mas também pode exigir que trabalhadores adquiram novas habilidades.'
+                )">
+
+                <span class="cenario-numero">
+                    SITUAÇÃO 02
+                </span>
+
+                <span class="cenario-icone">
+                    🤖
+                </span>
+
+                <h3>
+                    E o trabalho?
+                </h3>
+
+                <p>
+                    Máquinas substituindo tarefas humanas.
+                </p>
+
+            </div>
+
+
+            <div
+                class="cenario"
+                onclick="abrirPainel(
+                '03',
+                'Vida conectada',
+                'Uma pessoa passa várias horas por dia nas redes sociais, acompanhando outras pessoas e recebendo notificações constantemente.',
+                'O excesso de exposição digital pode influenciar hábitos, relações e a maneira como as pessoas percebem a si mesmas.'
+                )">
+
+                <span class="cenario-numero">
+                    SITUAÇÃO 03
+                </span>
+
+                <span class="cenario-icone">
+                    🧠
+                </span>
+
+                <h3>
+                    Estamos conectados demais?
+                </h3>
+
+                <p>
+                    Tecnologia e relações humanas.
+                </p>
+
+            </div>
+
+
+            <div
+                class="cenario"
+                onclick="abrirPainel(
+                '04',
+                'Nossos dados',
+                'Você baixa um aplicativo gratuito. Para utilizá-lo, aceita uma série de permissões e fornece informações pessoais.',
+                'Dados pessoais possuem valor. Por isso, compreender o que é coletado e como essas informações são utilizadas é uma questão social importante.'
+                )">
+
+                <span class="cenario-numero">
+                    SITUAÇÃO 04
+                </span>
+
+                <span class="cenario-icone">
+                    🔐
+                </span>
+
+                <h3>
+                    Quem sabe sobre você?
+                </h3>
+
+                <p>
+                    Privacidade na era digital.
+                </p>
+
+            </div>
+
+
+            <div
+                class="cenario"
+                onclick="abrirPainel(
+                '05',
+                'Informação ou desinformação?',
+                'Uma notícia aparece no seu celular. Ela parece verdadeira e está sendo compartilhada por várias pessoas.',
+                'A velocidade da internet facilita tanto a circulação de informações verdadeiras quanto a propagação de conteúdos falsos ou manipulados.'
+                )">
+
+                <span class="cenario-numero">
+                    SITUAÇÃO 05
+                </span>
+
+                <span class="cenario-icone">
+                    📰
+                </span>
+
+                <h3>
+                    Você acreditaria?
+                </h3>
+
+                <p>
+                    O impacto da informação digital.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PAINEL DOS CENÁRIOShtml
+    ====================================== -->
+
+    <div class="painel" id="painel">
+
+        <div class="painel-conteudo">
+
+            <button
+                class="fechar"
+                onclick="fecharPainel()">
+                ×
+            </button>
+
+            <span class="numero" id="painelNumero"></span>
+
+            <h2 id="painelTitulo"></h2>
+
+            <p id="painelTexto"></p>
+
+            <div
+                class="impacto-texto"
+                id="painelImpacto">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         03 — EFEITO DOMINÓ
+    ====================================== -->
+
+    <section class="domino">
+
+        <div class="domino-conteudo">
+
+            <div class="cabecalho">
+
+                <small>
+                    02 / ENTENDA
+                </small>
+
+                <h2>
+                    Uma escolha pode gerar um efeito dominó.
+                </h2>
+
+                <p>
+                    Os impactos sociais da tecnologia raramente
+                    acontecem de forma isolada.
+                </p>
+
+            </div>
+
+
+            <div class="fluxo">
+
+                <div class="etapa">
+
+                    <strong>TECNOLOGIA</strong>
+
+                    <span>
+                        Uma nova ferramenta
+                        é criada.
+                    </span>
+
+                </div>
+
+
+                <div class="seta">
+                    →
+                </div>
+
+
+                <div class="etapa">
+
+                    <strong>DECISÃO</strong>
+
+                    <span>
+                        Alguém decide
+                        como utilizá-la.
+                    </span>
+
+                </div>
+
+
+                <div class="seta">
+                    →
+                </div>
+
+
+                <div class="etapa">
+
+                    <strong>IMPACTO</strong>
+
+                    <span>
+                        Pessoas são
+                        afetadas.
+                    </span>
+
+                </div>
+
+
+                <div class="seta">
+                    →
+                </div>
+
+
+                <div class="etapa">
+
+                    <strong>SOCIEDADE</strong>
+
+                    <span>
+                        O comportamento
+                        coletivo muda.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         04 — ESCOLHA
+    ====================================== -->
+
+    <section class="escolhas">
+
+        <div class="escolhas-conteudo">
+
+            <div class="cabecalho">
+
+                <small>
+                    03 / VOCÊ DECIDE
+                </small>
+
+                <h2>
+                    E você, o que faria?
+                </h2>
+
+            </div>
+
+
+            <div class="situacao">
+
+                Uma informação chega até você.
+                Ela parece verdadeira, mas você não
+                conhece a fonte.
+
+            </div>
+
+
+            <div class="opcoes">
+
+                <button
+                    class="opcao"
+                    onclick="responder(
+                    'Você compartilha imediatamente.'
+                    )">
+
+                    📤 Compartilhar imediatamente
+
+                </button>
+
+
+                <button
+                    class="opcao"
+                    onclick="responder(
+                    'Boa escolha. Verificar a fonte antes de compartilhar ajuda a reduzir a propagação de desinformação.'
+                    )">
+
+                    🔎 Verificar a fonte primeiro
+
+                </button>
+
+
+                <button
+                    class="opcao"
+                    onclick="responder(
+                    'Ignorar pode evitar o compartilhamento, mas também é importante desenvolver o hábito de verificar informações.'
+                    )">
+
+                    🚫 Ignorar completamente
+
+                </button>
+
+
+                <button
+                    class="opcao"
+                    onclick="responder(
+                    'Compartilhar apenas porque outras pessoas compartilharam não garante que a informação seja verdadeira.'
+                    )">
+
+                    👥 Compartilhar porque todos estão compartilhando
+
+                </button>
+
+            </div>
+
+
+            <div id="resposta"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         05 — CONCLUSÃO
+    ====================================== -->
+
+    <section class="final">
+
+        <div>
+
+            <h2>
+                A tecnologia é criada por pessoas.
+                <span>O impacto também.</span>
+            </h2>
+
+            <p>
+                Não precisamos escolher entre tecnologia
+                e sociedade. Precisamos construir uma
+                tecnologia que considere as pessoas,
+                suas diferenças e suas necessidades.
+            </p>
+
+            <button
+                class="botao"
+                onclick="irPara('inicio')">
+
+                VOLTAR AO INÍCIO ↑
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        MARATONA TECH 2026
+        <br><br>
+        Tecnologia • Sociedade • Responsabilidade
+
+    </footer>
+
+
+    <script>
+
+        function irPara(id) {
+
+            document
+                .getElementById(id)
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        function abrirPainel(
+            numero,
+            titulo,
+            texto,
+            impacto
+        ) {
+
+            document
+                .getElementById("painelNumero")
+                .textContent = "SITUAÇÃO " + numero;
+
+            document
+                .getElementById("painelTitulo")
+                .textContent = titulo;
+
+            document
+                .getElementById("painelTexto")
+                .textContent = texto;
+
+            document
+                .getElementById("painelImpacto")
+                .textContent = impacto;
+
+            document
+                .getElementById("painel")
+                .style.display = "flex";
+
+        }
+
+
+        function fecharPainel() {
+
+            document
+                .getElementById("painel")
+                .style.display = "none";
+
+        }
+
+
+        function responder(mensagem) {
+
+            document
+                .getElementById("resposta")
+                .textContent = mensagem;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
