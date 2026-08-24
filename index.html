@@ -1,3 +1,5 @@
+# Central de Impacto — Riscos Sociais da Tecnologia
+
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Conecta Social | Riscos Sociais e Tecnologia</title>
+    <title>Central de Impacto | Maratona Tech</title>
 
     <style>
         * {
@@ -15,196 +17,1964 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #eef4f7;
-            color: #183C63;
-        }
-
-        header {
-            background: linear-gradient(135deg, #183C63, #246b8f);
+            background: #050b14;
             color: white;
+        }
+
+        /* =========================
+           TELA INICIAL
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px;
+
+            background:
+                radial-gradient(circle at 20% 20%, #123d5a 0%, transparent 30%),
+                radial-gradient(circle at 80% 80%, #3b174f 0%, transparent 30%),
+                #050b14;
         }
 
-        header h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
+        .tag {
+            color: #00e5ff;
+            border: 1px solid #00e5ff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            margin-bottom: 25px;
         }
 
-        header p {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .hero h1 {
+            font-size: clamp(42px, 8vw, 90px);
+            max-width: 1000px;
+            line-height: 0.95;
+            text-tra<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
         }
 
-        .introducao {
-            max-width: 850px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        }
+        body {
+            background-color: "yellow";
 
-        .introducao h2 {
-            margin-bottom: 10px;
-            color: #183C63;
-        }
-
-        .introducao p {
-            line-height: 1.6;
-            color: #444;
         }
 
         main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        .artigos {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
         }
 
         article {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 25px;
-
             background-color: white;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        article:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
-        }
-
-        .conteudo {
-            flex: 1;
-        }
-
-        .conteudo h2 {
-            margin-bottom: 10px;
-            color: #183C63;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-            color: #246b8f;
-            margin-bottom: 12px;
-        }
-
-        .conteudo p {
-            line-height: 1.6;
-            color: #444;
-        }
-
-        .imagem {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 12px;
-        }
-
-        .categoria {
-            display: inline-block;
-            background-color: #d4adcf;
-            color: #183C63;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .acoes {
-            margin-top: 15px;
-        }
-
-        button {
-            border: none;
-            background-color: #f1f5f8;
-            padding: 8px 12px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin-right: 8px;
-            font-size: 15px;
-            transition: 0.2s;
-        }
-
-        button:hover {
-            background-color: #dce8ef;
-            transform: scale(1.05);
         }
 
         footer {
             background-color: #183C63;
             color: white;
             text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        .alerta {
-            background-color: #fff3cd;
-            color: #664d03;
             padding: 20px;
-            border-radius: 12px;
-            margin-top: 25px;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 700px) {
-            header h1 {
-                font-size: 30px;
-            }
-
-            article {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .imagem {
-                width: 100%;
-                height: 200px;
-            }
         }
     </style>
 </head>
 
 <body>
-
     <header>
-
-        <h1>🌐 Conecta Social</h1>
-
-        <p>
-            Tecnologia, sociedade e os riscos que precisamos conhecer.
-        </p>
-
-        <button>
-            ❤️ <span>0</span>
-        </button>
-
-        <button>
-            👍 <span>0</span>
-        </button>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
 
     </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+nsform: uppercase;
+        }
+
+        .hero h1 span {
+            color: #00e5ff;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #aebdcc;
+            font-size: 19px;
+            margin: 25px 0;
+        }
+
+        .botao-principal {
+            background: #00e5ff;
+            color: #031018;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .botao-principal:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px #00e5ff;
+        }
+
+        /* =========================
+           RISCOS
+        ========================== */
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .titulo-secao span {
+            color: #00e5ff;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .titulo-secao h2 {
+            font-size: 42px;
+            margin-top: 10px;
+        }
+
+        .riscos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .risco {
+            background: #0b1522;
+            border: 1px solid #1d3042;
+            padding: 30px;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            position<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+: relative;
+            overflow: hidden;
+        }
+
+        .risco:hover {
+            transform: translateY(-8px);
+            border-color: #00e5ff;
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+        }
+
+        .numero {
+            color: #506275;
+            font-size: 13px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .icone {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .risco h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .risco p {
+            color: #8fa1b3;
+        }
+
+        /* =========================
+           PAINEL DE INFORMAÇÃO
+        ========================== */
+
+        #informacao {
+            display: none;
+            background: #0b1522;
+            border-top: 1px solid #20384d;
+        }
+
+        .painel {
+            max-width: 900px;
+            margin: auto;
+            border-left: 4px solid #00e5ff;
+            padding: 30px;
+            background: #08111c;
+        }
+
+        .painel h2 {
+            color: #00e5ff;
+            margin-bottom: 15px;
+        }
+
+        .painel p {
+            color: #b5c1cc;
+            font-size: 18px;
+        }
+
+        .fechar {
+            margin-top: 20px;
+            background: transparent;
+            color: white;
+            border: 1px solid #506275;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* =========================
+           NÚMEROS
+        ========================== */
+
+        .impacto {
+            background: #07101a;
+        }
+
+        .numeros {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .numero-card {
+            text-align: center;
+            padding: 35px 20px;
+            background: #0d1926;
+            border-r<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+adius: 15px;
+        }
+
+        .numero-card strong {
+            display: block;
+            font-size: 42px;
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+
+        .numero-card p {
+            color: #91a3b5;
+        }
+
+        /* =========================
+           QUIZ
+        ========================== */
+
+        .quiz {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .pergunta {
+            background: #0d1926;
+            border: 1px solid #20384d;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .pergunta h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .opcao {
+            width: 100%;
+            margin: 8px 0;
+            padding: 14px;
+            background: #142436;
+            color: white;
+            border: 1px solid #294257;
+            border-radius: 10px;
+            cursor: pointer;
+        }<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -378,345 +2148,407 @@
 </html>
 
 
-    <section class="introducao">
+        .opcao:hover {
+            background: #00e5ff;
+            color: #031018;
+        }
 
-        <h2>Por que falar sobre riscos sociais?</h2>
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00e5ff;
+        }
 
-        <p>
-            A tecnologia está cada vez mais presente em nossas vidas.
-            Ela facilita a comunicação, o acesso à informação e diversas
-            atividades do nosso cotidiano. Porém, seu uso também pode
-            gerar impactos sociais importantes.
-        </p>
+        /* =========================
+           FINAL
+        ========================== */
 
-        <div class="alerta">
+        .final {
+            min-height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background:
+                linear-gradient(rgba(5, 11, 20, 0.8), rgba(5, 11, 20, 0.95)),
+                radial-gradient(circle, #174f63, #050b14);
+        }
 
-            <strong>💡 Nosso objetivo:</strong>
+        .final h2 {
+            font-size: clamp(35px, 6vw, 65px);
+            max-width: 800px;
+        }
 
-            conscientizar as pessoas sobre os riscos sociais relacionados
-            ao uso da tecnologia e incentivar atitudes mais responsáveis,
-            seguras e conscientes no ambiente digital.
+        .final h2 span {
+            color: #00e5ff;
+        }
 
-        </div>
+        .final p {
+            max-width: 650px;
+            color: #aebdcc;
+            margin: 20px auto;
+            font-size: 18px;
+        }
 
-    </section>
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #607487;
+            border-top: 1px solid #182b3c;
+        }
 
+        /* =========================
+           RESPONSIVIDADE
+        ========================== */
 
+        @media (max-width: 800px) {
+
+            .riscos {
+                grid-template-columns: 1fr;
+            }
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
     <main>
-
-        <div class="artigos">
-
-
-            <!-- ARTIGO 1 -->
-
-            <article>
-
-                <div class="conteudo">
-
-                    <span class="categoria">
-                        🔐 Privacidade
-                    </span>
-
-                    <h2>
-                        Exposição de dados pessoais
-                    </h2>
-
-                    <p class="artigo-autor">
-                        Por: Equipe Conecta Social
-                    </p>
-
-                    <p>
-                        Compartilhar informações pessoais na internet pode
-                        aumentar os riscos de golpes, invasão de contas,
-                        exposição indevida e perda de privacidade.
-                        Por isso, é importante pensar antes de publicar
-                        informações como endereço, telefone, documentos
-                        ou localização.
-                    </p>
-
-                    <div class="acoes">
-
-                        <button>
-                            ❤️ <span>0</span>
-                        </button>
-
-                        <button>
-                            👎 <span>0</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img
-                        src="imagem-blog.png"
-                        class="imagem"
-                        alt="Ilustração sobre tecnologia e segurança digital">
-                </div>
-
-            </article>
-
-
-            <!-- ARTIGO 2 -->
-
-            <article>
-
-                <div class="conteudo">
-
-                    <span class="categoria">
-                        📱 Redes sociais
-                    </span>
-
-                    <h2>
-                        O impacto das redes sociais
-                    </h2>
-
-                    <p class="artigo-autor">
-                        Por: Equipe Conecta Social
-                    </p>
-
-                    <p>
-                        As redes sociais aproximam pessoas, mas também podem
-                        contribuir para problemas como cyberbullying,
-                        comparação social, disseminação de informações falsas
-                        e conflitos entre usuários.
-                    </p>
-
-                    <div class="acoes">
-
-                        <button>
-                            ❤️ <span>0</span>
-                        </button>
-
-                        <button>
-                            👎 <span>0</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img
-                        src="imagem-blog.png"
-                        class="imagem"
-                        alt="Ilustração representando redes sociais">
-                </div>
-
-            </article>
-
-
-            <!-- ARTIGO 3 -->
-
-            <article>
-
-                <div class="conteudo">
-
-                    <span class="categoria">
-                        🧠 Saúde digital
-                    </span>
-
-                    <h2>
-                        Uso excessivo da tecnologia
-                    </h2>
-
-                    <p class="artigo-autor">
-                        Por: Equipe Conecta Social
-                    </p>
-
-                    <p>
-                        O uso exagerado de celulares, computadores e redes
-                        sociais pode prejudicar a rotina, o sono, os estudos,
-                        o trabalho e as relações pessoais. Criar limites
-                        para o tempo de tela pode ajudar a manter uma relação
-                        mais equilibrada com a tecnologia.
-                    </p>
-
-                    <div class="acoes">
-
-                        <button>
-                            ❤️ <span>0</span>
-                        </button>
-
-                        <button>
-                            👎 <span>0</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img
-                        src="imagem-blog.png"
-                        class="imagem"
-                        alt="Ilustração sobre uso consciente da tecnologia">
-                </div>
-
-            </article>
-
-
-            <!-- ARTIGO 4 -->
-
-            <article>
-
-                <div class="conteudo">
-
-                    <span class="categoria">
-                        🤖 Inteligência Artificial
-                    </span>
-
-                    <h2>
-                        Inteligência Artificial e seus impactos sociais
-                    </h2>
-
-                    <p class="artigo-autor">
-                        Por: Equipe Conecta Social
-                    </p>
-
-                    <p>
-                        A Inteligência Artificial pode trazer grandes benefícios,
-                        mas também apresenta desafios sociais. Entre eles estão
-                        a disseminação de conteúdos falsos, possíveis
-                        discriminações algorítmicas e mudanças no mercado
-                        de trabalho. O uso responsável e ético dessas
-                        tecnologias é fundamental.
-                    </p>
-
-                    <div class="acoes">
-
-                        <button>
-                            ❤️ <span>0</span>
-                        </button>
-
-                        <button>
-                            👎 <span>0</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img
-                        src="imagem-blog.png"
-                        class="imagem"
-                        alt="Ilustração sobre inteligência artificial">
-                </div>
-
-            </article>
-
-
-            <!-- ARTIGO 5 -->
-
-            <article>
-
-                <div class="conteudo">
-
-                    <span class="categoria">
-                        ⚠️ Desinformação
-                    </span>
-
-                    <h2>
-                        Fake news e seus efeitos na sociedade
-                    </h2>
-
-                    <p class="artigo-autor">
-                        Por: Equipe Conecta Social
-                    </p>
-
-                    <p>
-                        A circulação de informações falsas pode influenciar
-                        decisões, provocar conflitos e prejudicar pessoas e
-                        comunidades. Antes de compartilhar uma informação,
-                        é importante verificar sua fonte e procurar
-                        informações em canais confiáveis.
-                    </p>
-
-                    <div class="acoes">
-
-                        <button>
-                            ❤️ <span>0</span>
-                        </button>
-
-                        <button>
-                            👎 <span>0</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img
-                        src="imagem-blog.png"
-                        class="imagem"
-                        alt="Ilustração sobre desinformação na internet">
-                </div>
-
-            </article>
-
-
-        </div>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
 
     </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
 
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
 
     <footer>
-
-        <p>
-            © 2026 Conecta Social
-        </p>
-
-        <p>
-            Projeto desenvolvido para a Maratona Tech
-        </p>
-
-        <p>
-            Tecnologia com consciência. Sociedade com responsabilidade.
-        </p>
-
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
     </footer>
 
-
     <script>
-
         const botoes = document.querySelectorAll("button");
-
         botoes.forEach(function (botao) {
-
             let curtiu = false;
-
-            botao.addEventListener("click", function () {
-
-                const texto = botao.querySelector("span");
-
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
                 if (curtiu === false) {
-
-                    texto.textContent =
-                        Number(texto.textContent) + 1;
-
+                    texto.textContent++;
                     curtiu = true;
-
                 } else {
-
-                    texto.textContent =
-                        Number(texto.textContent) - 1;
-
+                    texto.textContent--;
                     curtiu = false;
-
                 }
-
-            });
-
-        });
-
+            }
+        })
     </script>
 
 </body>
 
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -888,4 +2720,914 @@
 
 </html>
 
+            .numeros {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .titulo-secao h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         ABERTURA
+    ========================== -->
+
+    <header class="hero">
+
+        <div class="tag">
+            MARATONA TECH • 2026
+        </div>
+
+        <h1>
+            Tecnologia:
+            <span>qual é o custo social?</span>
+        </h1>
+
+        <p>
+            A tecnologia está mudando o mundo.
+            Mas toda inovação também pode gerar consequências.
+            Explore os riscos sociais por trás da transformação digital.
+        </p>
+
+        <button class="botao-principal"
+            onclick="document.getElementById('riscos').scrollIntoView()">
+            EXPLORAR OS RISCOS ↓
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         RISCOS
+    ========================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+
+    <section id="riscos">
+
+        <div class="titulo-secao">
+
+            <span>01 — MAPA DE IMPACTO</span>
+
+            <h2>Onde estão os riscos?</h2>
+
+        </div>
+
+
+        <div class="riscos">
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Desigualdade digital',
+                'Nem todas as pessoas possuem acesso igual à internet, dispositivos e educação tecnológica. Essa diferença pode limitar oportunidades de estudo, trabalho e participação social.'
+                )">
+
+                <span class="numero">01</span>
+
+                <div class="icone">📱</div>
+
+                <h3>Desigualdade digital</h3>
+
+                <p>
+                    Quem fica de fora da transformação digital?
+                </p>
+
+            </div>
+
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Automação e empregos',
+                'A inteligência artificial e a automação podem transformar profissões e eliminar determinadas tarefas. Ao mesmo tempo, novas oportunidades surgem, exigindo qualificação e adaptação.'
+                )">
+
+                <span class="numero">02</span>
+
+                <div class="icone">🤖</div>
+
+                <h3>Empregos</h3>
+
+                <p>
+                    O que acontece quando máquinas fazem nosso trabalho?
+                </p>
+
+            </div>
+
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Saúde mental',
+                'O uso intenso das redes sociais pode aumentar a comparação social, a exposição constante e a busca por aprovação. O equilíbrio no uso da tecnologia é fundamental.'
+                )">
+
+                <span class="numero">03</span>
+
+                <div class="icone">🧠</div>
+
+                <h3>Saúde mental</h3>
+
+                <p>
+                    Até onde a conexão digital pode afetar as pessoas?
+                </p>
+
+            </div>
+
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Privacidade',
+                'Aplicativos e plataformas digitais podem coletar grandes quantidades de informações sobre seus usuários. A proteção desses dados é essencial para evitar abusos e usos indevidos.'
+                )">
+
+                <span class="numero">04</span>
+
+                <div class="icone">🔐</div>
+
+                <h3>Privacidade</h3>
+
+                <p>
+                    Quem controla os dados que produzimos?
+                </p>
+
+            </div>
+
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Desinformação',
+                'A internet permite que informações sejam compartilhadas em segundos. Isso também facilita a circulação de conteúdos falsos, manipulados ou fora de contexto.'
+                )">
+
+                <span class="numero">05</span>
+
+                <div class="icone">📰</div>
+
+                <h3>Desinformação</h3>
+
+                <p>
+                    Será que tudo o que vemos na internet é verdade?
+                </p>
+
+            </div>
+
+
+            <div class="risco"
+                onclick="mostrarRisco(
+                'Ética tecnológica',
+                'Desenvolver tecnologia não significa apenas criar algo novo. É necessário pensar em quem será beneficiado, quem pode ser prejudicado e quais consequências podem surgir.'
+                )">
+
+                <span class="numero">06</span>
+
+                <div class="icone">⚖️</div>
+
+                <h3>Ética</h3>
+
+                <p>
+                    Podemos criar tecnologia sem pensar nas consequências?
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMAÇÃO
+    ========================== -->
+
+    <section id="informacao">
+
+        <div class="painel">
+
+            <h2 id="tituloRisco"></h2>
+
+            <p id="textoRisco"></p>
+
+            <button class="fechar" onclick="fecharRisco()">
+                FECHAR
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         IMPACTO
+    ========================== -->
+
+    <section class="impacto">
+
+        <div class="titulo-secao">
+
+            <span>02 — DIMENSÃO DO PROBLEMA</span>
+
+            <h2>O impacto vai além da tela</h2>
+
+        </div>
+
+
+        <div class="numeros">
+
+            <div class="numero-card">
+
+                <strong>24h</strong>
+
+                <p>
+                    A tecnologia está presente em diferentes momentos
+                    da vida cotidiana.
+                </p>
+
+            </div>
+
+
+            <div class="numero-card">
+
+                <strong>∞</strong>
+
+                <p>
+                    A quantidade de dados digitais produzidos cresce
+                    constantemente.
+                </p>
+
+            </div>
+
+
+            <div class="numero-card">
+
+                <strong>1</strong>
+
+                <p>
+                    Uma decisão tecnológica pode afetar milhares ou
+                    até milhões de pessoas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUIZ
+    ========================== -->
+
+    <section>
+
+        <div class="titulo-secao">
+
+            <span>03 — TESTE SEU CONHECIMENTO</span>
+
+            <h2>Você está preparado?</h2>
+
+        </div>
+
+
+        <div class="quiz">
+
+            <div class="pergunta">
+
+                <h3>
+                    Qual dessas atitudes ajuda a reduzir
+                    os riscos sociais da tecnologia?
+                </h3>
+
+                <button class="opcao"
+                    onclick="responder(false)">
+                    Compartilhar qualquer informação rapidamente
+                </button>
+
+                <button class="opcao"
+                    onclick="responder(true)">
+                    Verificar informações antes de compartilhá-las
+                </button>
+
+                <button class="opcao"
+                    onclick="responder(false)">
+                    Ignorar completamente questões de privacidade
+                </button>
+
+                <button class="opcao"
+                    onclick="responder(false)">
+                    Utilizar tecnologia sem questionar seus impactos
+                </button>
+
+                <div id="resultado"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONCLUSÃO
+    ========================== -->
+
+    <section class="final">
+
+        <div>
+
+            <h2>
+                O futuro não é apenas
+                <span>tecnológico.</span>
+            </h2>
+
+            <p>
+                Ele também é social.
+                A tecnologia que queremos no futuro depende
+                das escolhas que fazemos hoje.
+            </p>
+
+            <button class="botao-principal"
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                VOLTAR AO INÍCIO ↑
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            MARATONA TECH 2026 • Desenvolvido por Alexandra
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        function mostrarRisco(titulo, texto) {
+
+            document.getElementById("tituloRisco").textContent = titulo;
+
+            document.getElementById("textoRisco").textContent = texto;
+
+            document.getElementById("informacao").style.display = "block";
+
+            document.getElementById("informacao").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function fecharRisco() {
+
+            document.getElementById("informacao").style.display = "none";
+
+        }
+
+
+        function responder(correto) {
+
+            const resultado =
+                document.getElementById("resultado");
+
+            if (correto) {
+
+                resultado.textContent =
+                    "✓ Correto! Verificar informações é uma atitude importante para combater a desinformação.";
+
+            } else {
+
+                resultado.textContent =
+                    "✗ Pense novamente. Uma boa prática é verificar a informação antes de compartilhá-la.";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
 ```
