@@ -1,3 +1,210 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Social | Riscos Sociais e Tecnologia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef4f7;
+            color: #183C63;
+        }
+
+        header {
+            background: linear-gradient(135deg, #183C63, #246b8f);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .introducao {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .introducao h2 {
+            margin-bottom: 10px;
+            color: #183C63;
+        }
+
+        .introducao p {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .artigos {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        article:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .conteudo {
+            flex: 1;
+        }
+
+        .conteudo h2 {
+            margin-bottom: 10px;
+            color: #183C63;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #246b8f;
+            margin-bottom: 12px;
+        }
+
+        .conteudo p {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .imagem {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .categoria {
+            display: inline-block;
+            background-color: #d4adcf;
+            color: #183C63;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .acoes {
+            margin-top: 15px;
+        }
+
+        button {
+            border: none;
+            background-color: #f1f5f8;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 8px;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #dce8ef;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        .alerta {
+            background-color: #fff3cd;
+            color: #664d03;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            article {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .imagem {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🌐 Conecta Social</h1>
+
+        <p>
+            Tecnologia, sociedade e os riscos que precisamos conhecer.
+        </p>
+
+        <button>
+            ❤️ <span>0</span>
+        </button>
+
+        <button>
+            👍 <span>0</span>
+        </button>
+
+    </header>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -169,3 +376,516 @@
 </body>
 
 </html>
+
+
+    <section class="introducao">
+
+        <h2>Por que falar sobre riscos sociais?</h2>
+
+        <p>
+            A tecnologia está cada vez mais presente em nossas vidas.
+            Ela facilita a comunicação, o acesso à informação e diversas
+            atividades do nosso cotidiano. Porém, seu uso também pode
+            gerar impactos sociais importantes.
+        </p>
+
+        <div class="alerta">
+
+            <strong>💡 Nosso objetivo:</strong>
+
+            conscientizar as pessoas sobre os riscos sociais relacionados
+            ao uso da tecnologia e incentivar atitudes mais responsáveis,
+            seguras e conscientes no ambiente digital.
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <div class="artigos">
+
+
+            <!-- ARTIGO 1 -->
+
+            <article>
+
+                <div class="conteudo">
+
+                    <span class="categoria">
+                        🔐 Privacidade
+                    </span>
+
+                    <h2>
+                        Exposição de dados pessoais
+                    </h2>
+
+                    <p class="artigo-autor">
+                        Por: Equipe Conecta Social
+                    </p>
+
+                    <p>
+                        Compartilhar informações pessoais na internet pode
+                        aumentar os riscos de golpes, invasão de contas,
+                        exposição indevida e perda de privacidade.
+                        Por isso, é importante pensar antes de publicar
+                        informações como endereço, telefone, documentos
+                        ou localização.
+                    </p>
+
+                    <div class="acoes">
+
+                        <button>
+                            ❤️ <span>0</span>
+                        </button>
+
+                        <button>
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <img
+                        src="imagem-blog.png"
+                        class="imagem"
+                        alt="Ilustração sobre tecnologia e segurança digital">
+                </div>
+
+            </article>
+
+
+            <!-- ARTIGO 2 -->
+
+            <article>
+
+                <div class="conteudo">
+
+                    <span class="categoria">
+                        📱 Redes sociais
+                    </span>
+
+                    <h2>
+                        O impacto das redes sociais
+                    </h2>
+
+                    <p class="artigo-autor">
+                        Por: Equipe Conecta Social
+                    </p>
+
+                    <p>
+                        As redes sociais aproximam pessoas, mas também podem
+                        contribuir para problemas como cyberbullying,
+                        comparação social, disseminação de informações falsas
+                        e conflitos entre usuários.
+                    </p>
+
+                    <div class="acoes">
+
+                        <button>
+                            ❤️ <span>0</span>
+                        </button>
+
+                        <button>
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <img
+                        src="imagem-blog.png"
+                        class="imagem"
+                        alt="Ilustração representando redes sociais">
+                </div>
+
+            </article>
+
+
+            <!-- ARTIGO 3 -->
+
+            <article>
+
+                <div class="conteudo">
+
+                    <span class="categoria">
+                        🧠 Saúde digital
+                    </span>
+
+                    <h2>
+                        Uso excessivo da tecnologia
+                    </h2>
+
+                    <p class="artigo-autor">
+                        Por: Equipe Conecta Social
+                    </p>
+
+                    <p>
+                        O uso exagerado de celulares, computadores e redes
+                        sociais pode prejudicar a rotina, o sono, os estudos,
+                        o trabalho e as relações pessoais. Criar limites
+                        para o tempo de tela pode ajudar a manter uma relação
+                        mais equilibrada com a tecnologia.
+                    </p>
+
+                    <div class="acoes">
+
+                        <button>
+                            ❤️ <span>0</span>
+                        </button>
+
+                        <button>
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <img
+                        src="imagem-blog.png"
+                        class="imagem"
+                        alt="Ilustração sobre uso consciente da tecnologia">
+                </div>
+
+            </article>
+
+
+            <!-- ARTIGO 4 -->
+
+            <article>
+
+                <div class="conteudo">
+
+                    <span class="categoria">
+                        🤖 Inteligência Artificial
+                    </span>
+
+                    <h2>
+                        Inteligência Artificial e seus impactos sociais
+                    </h2>
+
+                    <p class="artigo-autor">
+                        Por: Equipe Conecta Social
+                    </p>
+
+                    <p>
+                        A Inteligência Artificial pode trazer grandes benefícios,
+                        mas também apresenta desafios sociais. Entre eles estão
+                        a disseminação de conteúdos falsos, possíveis
+                        discriminações algorítmicas e mudanças no mercado
+                        de trabalho. O uso responsável e ético dessas
+                        tecnologias é fundamental.
+                    </p>
+
+                    <div class="acoes">
+
+                        <button>
+                            ❤️ <span>0</span>
+                        </button>
+
+                        <button>
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <img
+                        src="imagem-blog.png"
+                        class="imagem"
+                        alt="Ilustração sobre inteligência artificial">
+                </div>
+
+            </article>
+
+
+            <!-- ARTIGO 5 -->
+
+            <article>
+
+                <div class="conteudo">
+
+                    <span class="categoria">
+                        ⚠️ Desinformação
+                    </span>
+
+                    <h2>
+                        Fake news e seus efeitos na sociedade
+                    </h2>
+
+                    <p class="artigo-autor">
+                        Por: Equipe Conecta Social
+                    </p>
+
+                    <p>
+                        A circulação de informações falsas pode influenciar
+                        decisões, provocar conflitos e prejudicar pessoas e
+                        comunidades. Antes de compartilhar uma informação,
+                        é importante verificar sua fonte e procurar
+                        informações em canais confiáveis.
+                    </p>
+
+                    <div class="acoes">
+
+                        <button>
+                            ❤️ <span>0</span>
+                        </button>
+
+                        <button>
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <img
+                        src="imagem-blog.png"
+                        class="imagem"
+                        alt="Ilustração sobre desinformação na internet">
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Conecta Social
+        </p>
+
+        <p>
+            Projeto desenvolvido para a Maratona Tech
+        </p>
+
+        <p>
+            Tecnologia com consciência. Sociedade com responsabilidade.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", function () {
+
+                const texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+
+                    texto.textContent =
+                        Number(texto.textContent) + 1;
+
+                    curtiu = true;
+
+                } else {
+
+                    texto.textContent =
+                        Number(texto.textContent) - 1;
+
+                    curtiu = false;
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: "yellow";
+
+        }
+
+        main {
+            background-color: #d4adcf;
+            color: #183C63;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        div p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+
+    </header>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+            </div>
+        </article>
+    </main>
+    <main>
+        <article>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Alexandra</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
+
+```
